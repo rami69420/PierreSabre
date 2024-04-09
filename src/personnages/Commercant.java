@@ -17,6 +17,5 @@ public class Commercant extends Humain {
     // Le commerçant reçoit de l'argent
     public void recevoir(int argent) {
         setArgent(getArgent() + argent); // Utilisez le getter et le setter pour ajuster l'argent
-        parler("Merci avec déférence pour votre générosité.");
     }
 }
