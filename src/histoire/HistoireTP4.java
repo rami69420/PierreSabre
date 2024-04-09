@@ -31,7 +31,7 @@ public class HistoireTP4 {
         
         
 
-        
+        // Le Yakuza extorque le commerçant
         Yakuza yakuLeNoir = new Yakuza("Yaku Le Noir", 30, "whisky", "Warsong");
         yakuLeNoir.direBonjour();
         System.out.println("(Yaku Le Noir) - Tiens, tiens, ne serait-ce pas un faible marchand qui passe par là ?");
@@ -39,9 +39,14 @@ public class HistoireTP4 {
         yakuLeNoir.extorquer(marco);
         
         
+        // Le Ronin fait un don
         Ronin roronoa = new Ronin("Roronoa", 60, "shochu");
         roronoa.direBonjour();
         roronoa.donner(marco);
         System.out.println("(Marco) - Je te remercie généreux donateur!");
+        
+        
+        // Début du duel 
+        roronoa.provoquer(yakuLeNoir);
 	}
 }
