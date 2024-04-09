@@ -17,10 +17,15 @@ public class Humain {
         return nom;
     }
 
-    // Accesseur pour l'argent
+    // Get Set pour l'argent
     public int getArgent() {
         return argent;
     }
+    
+    public void setArgent(int argent) {
+        this.argent = argent;
+    }
+
 
     // Méthode pour dire bonjour
     public void direBonjour() {
@@ -55,7 +60,7 @@ public class Humain {
     }
 
     // Méthode pour faire parler un Humain
-    private void parler(String texte) {
+    protected void parler(String texte) {
         System.out.println(texte);
     }
 }
